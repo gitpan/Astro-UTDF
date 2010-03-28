@@ -1,0 +1,28 @@
+---
+abstract: 'Represent Universal Tracking Data Format (UTDF) data'
+author:
+  - 'Tom Wyant (wyant at cpan dot org)'
+build_requires:
+  Test::More: 0.4
+generated_by: 'Module::Build version 0.3603'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Astro-UTDF
+no_index:
+  directory:
+    - inc
+    - t
+    - xt
+provides:
+  Astro::UTDF:
+    file: lib/Astro/UTDF.pm
+    version: 0.001
+requires:
+  Params::Util: 0.25
+  Scalar::Util: 0
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.001

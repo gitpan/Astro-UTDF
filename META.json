@@ -1,0 +1,58 @@
+{
+   "abstract" : "Represent Universal Tracking Data Format (UTDF) data",
+   "author" : [
+      "Tom Wyant (wyant at cpan dot org)"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112621",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Astro-UTDF",
+   "no_index" : {
+      "directory" : [
+         "inc",
+         "t",
+         "xt"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0.4"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : 0,
+            "IO::File" : 0,
+            "POSIX" : 0,
+            "Scalar::Util" : 0,
+            "Time::Local" : 0,
+            "perl" : "5.006002",
+            "strict" : 0,
+            "warnings" : 0
+         }
+      }
+   },
+   "provides" : {
+      "Astro::UTDF" : {
+         "file" : "lib/Astro/UTDF.pm",
+         "version" : "0.001_90"
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Astro-UTDF"
+      },
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.001_90"
+}

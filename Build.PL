@@ -7,26 +7,29 @@ use lib qw{ inc };
 
 use Module::Build;
 use My::Module::Build;
+use My::Module::Meta;
 
 (my $mbv = Module::Build->VERSION()) =~ s/_//g;
+
+my $meta = My::Module::Meta->new();
+
 my %args = (
     dist_author => 'Tom Wyant (wyant at cpan dot org)',
     dist_abstract => 'Represent Universal Tracking Data Format (UTDF) data',
     module_name => 'Astro::UTDF',
-    build_requires => {
-	'Test::More' => 0.40,
-    },
-    requires => {
-	'Params::Util'	=> 0.25,
-	'Scalar::Util'	=> 0,
-	perl		=> 5.006,
-    },
+    build_requires => $meta->build_requires(),
+    requires => $meta->requires(
+	perl => $meta->requires_perl(),
+    ),
     license => 'perl',
 );
 
 $mbv >= 0.28 and $args{meta_merge} = {
     no_index => {
 	directory => [qw{inc t xt}],
+    },
+    resources => {
+	bugtracker => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Astro-UTDF',
     },
 };
 

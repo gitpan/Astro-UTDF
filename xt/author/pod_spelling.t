@@ -4,8 +4,10 @@ use strict;
 use warnings;
 
 BEGIN {
-    eval {require Test::Spelling};
-    $@ and do {
+    eval {
+	require Test::Spelling;
+	1;
+    } or do {
 	print "1..0 # skip Test::Spelling not available.\n";
 	exit;
     };
@@ -22,9 +24,12 @@ agc
 Doppler
 hexified
 Kongsberg
+merchantability
 padid
+radians
 SRE
 TDRSS
+tropospheric
 Tyldum
 UTDF
 vid

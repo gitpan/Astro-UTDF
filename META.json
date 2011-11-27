@@ -42,10 +42,10 @@
    "provides" : {
       "Astro::UTDF" : {
          "file" : "lib/Astro/UTDF.pm",
-         "version" : "0.001_90"
+         "version" : "0.002"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Astro-UTDF"
@@ -54,5 +54,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.001_90"
+   "version" : "0.002"
 }
